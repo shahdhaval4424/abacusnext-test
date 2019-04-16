@@ -1,0 +1,51 @@
+<ion-header>
+  <app-tabs></app-tabs>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="left-align sm">
+        <ion-label> {{ currentDate }} </ion-label>
+      </ion-col>
+      <ion-col class="right-align sm">
+        {{ currentTime }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card>
+    <ion-card-content >
+      <ion-grid>
+        <ion-row>
+          <ion-col (click)="showdetail()" class="left-align right-border" size="8">
+            <h2> {{timerdetail.contact}}</h2>
+            <p style="font-size: 12px;"> {{timerdetail.note}} </p>
+          </ion-col>
+          <ion-col>
+            <div class="right-align" (click)="showdetail()">
+              <ion-icon name="cloud"></ion-icon>
+            </div>
+            <div>
+              <div style="float:left;width:100%;">
+                <div style="float:left;text-align: center;width:50%">
+                  <ion-icon name="play" class="large" (click)="starttimer()" slot="icon-only"
+                    *ngIf="timerStatus == 'pause'" style="color:green;"></ion-icon>
+                  <ion-icon name="pause" class="large" (click)="pausetimer()" slot="icon-only"
+                    *ngIf="timerStatus == 'start'" style="color:green;"></ion-icon>
+                </div>
+                <div style="float:right;vertical-align: middle;text-align: center;width:50%" (click)="showdetail()">
+                  <span>{{counter}}</span>
+                </div>
+                <!-- </ion-button> -->
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

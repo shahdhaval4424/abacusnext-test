@@ -1,0 +1,31 @@
+ion-tab-button 
+{
+    background:#0066cc;
+}
+ion-segment
+{
+    background:#0066cc;
+    ion-icon ,  ion-label
+    {
+        color: lighten($color: #0066cc, $amount: 20%);
+    }
+}
+
+.segment-button-checked
+{
+    background:#0066cc;
+    ion-icon ,  ion-label
+    {
+        color:white;
+    }
+}
+
+ion-segment
+{
+    ion-label
+    {
+        text-transform: capitalize;
+    }
+}
+
+

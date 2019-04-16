@@ -1,5 +1,7 @@
 {
   "name": "abacusnext-test",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

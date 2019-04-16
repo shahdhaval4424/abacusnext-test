@@ -1,0 +1,45 @@
+<ion-header>
+    <!-- <app-tabs></app-tabs> -->
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+              <ion-icon name="calendar" style="color:blue"></ion-icon>
+            </ion-thumbnail>
+            <div>
+              <p>DATE</p>
+              <h3>{{timerDetail.date}}</h3>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail slot="start">
+                <ion-icon name="contacts" style="color:cyan"></ion-icon>
+              </ion-thumbnail>
+              <div>
+                <p>CONTACT</p>
+                <h3>{{timerDetail.contact}}</h3>
+              </div>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail slot="start">
+                  <ion-icon name="play" style="color:green"></ion-icon>
+                </ion-thumbnail>
+                <div>
+                  <p>DURATION</p>
+                  <h3>{{timerDetail.duration}}</h3>
+                </div>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail slot="start">
+                    <ion-icon name="quote" style="color:blueviolet"></ion-icon>
+                  </ion-thumbnail>
+                  <div>
+                    <p>NOTE</p>
+                    <h3>{{timerDetail.note}}</h3>
+                  </div>
+              </ion-item>
+    </ion-list>
+      <ion-button expand="full" (click)="goback()"> Go back</ion-button>
+</ion-content>

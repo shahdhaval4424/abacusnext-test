@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {TabsPage, TimerPage, DetailPage} from './pages'
+
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: '', redirectTo: 'timer-page', pathMatch: 'full' },
+  { path: 'tabs', component: TabsPage },
+  { path: 'timer-page', component: TimerPage},
+  { path: 'detail-page', component:DetailPage },
 ];
 
 @NgModule({
