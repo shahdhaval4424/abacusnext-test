@@ -8,6 +8,7 @@ ion-segment
     ion-icon ,  ion-label
     {
         color: lighten($color: #0066cc, $amount: 20%);
+        text-transform: uppercase;
     }
 }
 
@@ -17,14 +18,6 @@ ion-segment
     ion-icon ,  ion-label
     {
         color:white;
-    }
-}
-
-ion-segment
-{
-    ion-label
-    {
-        text-transform: capitalize;
     }
 }
 
