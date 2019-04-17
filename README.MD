@@ -1,6 +1,6 @@
 # abacusnext
 
-This repository if to share demo application with Abacus next.
+This repository is to share demo application with Abacus next.
 
 ## contact info
 Dhaval Shah 
